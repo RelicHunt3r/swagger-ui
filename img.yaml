@@ -24,11 +24,11 @@ paths:
           required: true
           type: string
       tags:
-        - Click here to login
+        - Login
       responses:
         '200':
-          description: Successfully logged in and authenticated.
+          description: Successfully logged in.
         '400':
-          description: Invalid credentials or missing parameters.
+          description: Invalid credentials.
         '500':
           description: Internal server error.
